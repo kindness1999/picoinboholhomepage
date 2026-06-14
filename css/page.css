@@ -19,11 +19,11 @@
 }
 
 .page-hero--house .page-hero-bg {
-  background-image: url("../image/building1.jpg");
+  background-image: url("/image/building1.jpg");
 }
 
 .page-hero--dive .page-hero-bg {
-  background-image: url("../image/coral.jpg");
+  background-image: url("/image/coral.jpg");
 }
 
 .page-hero-overlay {

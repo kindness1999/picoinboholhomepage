@@ -20,17 +20,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 
   <header class="site-header" id="header">
     <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="PICO Home">PICO</a>
+      <a href="/" class="logo" aria-label="PICO Home">PICO</a>
 
       <nav class="nav-desktop" aria-label="Main navigation">
-        <a href="index.html" class="is-active">Home</a>
+        <a href="/" class="is-active">Home</a>
         <a href="#" id="navHouse">Pico House</a>
         <a href="#" id="navDive">Pico Dive</a>
         <a href="#contact">Contact</a>
@@ -45,7 +45,7 @@
   </header>
 
   <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="#" id="navHouseMobile">Pico House</a>
     <a href="#" id="navDiveMobile">Pico Dive</a>
     <a href="#contact" id="navContactMobile">Contact</a>
@@ -119,16 +119,16 @@
 
         <div class="social-row reveal">
           <a href="http://pf.kakao.com/_xgpRZn" target="_blank" rel="noopener noreferrer" aria-label="KakaoTalk">
-            <img src="logo/KakaoTalk_logo.svg.png" alt="">
+            <img src="/logo/KakaoTalk_logo.svg.png" alt="">
           </a>
           <a href="https://wa.me/639625402625" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <img src="logo/WhatsApp.svg" alt="">
+            <img src="/logo/WhatsApp.svg" alt="">
           </a>
           <a href="https://m.me/picoinbohol" target="_blank" rel="noopener noreferrer" aria-label="Messenger">
-            <img src="logo/Facebook_Messenger_logo_2020.svg" alt="">
+            <img src="/logo/Facebook_Messenger_logo_2020.svg" alt="">
           </a>
           <a href="https://instagram.com/picoinbohol" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="logo/Instagram_icon.png" alt="">
+            <img src="/logo/Instagram_icon.png" alt="">
           </a>
         </div>
       </div>
@@ -162,12 +162,12 @@
 
     function goHouse(e) {
       if (e) e.preventDefault();
-      window.location.href = isKorean ? 'pico_house_kr.html' : 'pico_house_en.html';
+      window.location.href = isKorean ? '/pico_house_kr.html' : '/pico_house_en.html';
     }
 
     function goDive(e) {
       if (e) e.preventDefault();
-      window.location.href = isKorean ? 'pico_dive_kr.html' : 'pico_dive_en.html';
+      window.location.href = isKorean ? '/pico_dive_kr.html' : '/pico_dive_en.html';
     }
 
     ['cardHouse', 'navHouse', 'navHouseMobile'].forEach(id => {
