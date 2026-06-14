@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico House & Pico Dive Open</title>
+    <style>
+        /* 기존 스타일은 유지하고 화살표 스타일만 추가 */
+        .arrow-left {
+            display: inline-block;
+            color: #ff6b6b;
+            font-size: 1.2em;
+            margin-right: 5px;
+            animation: bounceLeft 1s infinite;
+        }
+
+        @keyframes bounceLeft {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-5px);
+            }
+        }
+
+        /* 이전 스타일들은 동일하게 유지... */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #1a1a1a;
+        }
+
+        .container {
+            min-height: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+                url('/api/placeholder/1920/1080'); /* 배경이미지, 현재 없음 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            word-break: keep-all;
+        }
+
+        a {
+            color: #4dabf7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #74c0fc;
+        }
+
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+            color: #adb5bd;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin-left: 0;
+                margin-right: 0;
+            } 
+
+            .container {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 20px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>"Pico House & Pico Dive" OPEN</h1>
+            <p>안녕하세요.</p>
+            <p>
+                저희 Pico House 와 Pico Dive 가 드디어 오픈했습니다.<br>
+                여행 오시는 분들이 편안하게 쉴 수 있는 작지만 아담한 공간과,<br>
+                일상을 벗어나 바닷속을 여행할 수 있는 스쿠버 다이빙 서비스도 준비했습니다.
+            </p>
+            <p>
+                작은 공간이지만 큰 기쁨을 나눌 수 있는 특별한 공간으로 만들려고 합니다.<br>
+
+                저희 홈페이지에 한번 들러 주시고, 많은 홍보 부탁드리겠습니다.<br><br>
+                보홀 여행에 대해서 도움이 필요하시면 언제라도 연락 주세요.
+            </p>
+
+
+
+            <div class="contact-info">
+                <p>
+                    <a href="http://pf.kakao.com/_xgpRZn" target="_blank" rel="noopener noreferrer">picoinbohol</a>
+                    <span class="highlight"><span class="arrow-left">←</span>클릭 & 구독</span>
+                </p>
+                <p>
+                    홈페이지: <a href="http://www.picoinbohol.com" target="_blank" rel="noopener noreferrer">www.picoinbohol.com</a>
+                </p>
+            </div>
+
+            <p>감사합니다.</p>
+
+            <div class="signature">
+                Pico House & Pico Dive
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taeho Kim profile</title>
+    <style>
+        /* 이전 스타일들은 동일하게 유지... */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: white;
+        }
+
+        .container {
+            min-height: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+                url('/api/placeholder/1920/1080');
+            /* 배경이미지, 현재 없음 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-radius: 10px;
+            /* 모서리를 약간 둥글게 */
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            word-break: keep-all;
+        }
+
+        a {
+            color: #4dabf7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #74c0fc;
+        }
+
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+            color: #adb5bd;
+        }
+
+        .contact-icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            /* 밑줄 제거 */
+            color: #333;
+            /* 검은색 텍스트로 변경 */
+            font-weight: normal;
+        }
+
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .profile-picture {
+            width: 150px;
+            /* 기본 크기 */
+            height: auto;
+            /* 비율 유지 */
+            border-radius: 50%;
+            /* 원형으로 변경 */
+            margin: 20px auto;
+            /* 상하 여백과 가운데 정렬 */
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            /* 그림자 추가 */
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 20px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .profile-picture {
+        width: 100px; /* 작은 화면에서는 더 작게 표시 */
+    }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>PICO HOUSE<br>
+                김 태 호</h1>
+            <img src="image/TAEHO1.jpg" alt="김태호 사진" class="profile-picture">
+            <p></p>
+            <p> 주 소 : PICO HOUSE PUROK5 TAWALA PANGLAO BOHOL(6430)<br>
+                휴대폰 : <a href="tel:+821094462727" target="_blank">+82 10-9446-2727(한국) / <a href="tel:+639625402625"
+                        target="_blank">
+                        +63 96-2540-2625(필리핀) </a><br>
+                    이메일 : <a href="mailto:picoinbohol@gmail.com" target="_blank">
+                        picoinbohol@gmail.com(대표) / <a href="mailto:kindness1999@gmail.com" target="_blank">
+                            kindness1999@gmail.com(개인) </a><br>
+                        홈페이지: <a href="http://www.picoinbohol.com" target="_blank"
+                            rel="noopener noreferrer">www.picoinbohol.com</a><br>
+                        <p></p>
+                        <p>
+                            [SNS DM]<BR>
+                            카카오톡 ID: picoinbohol(대표) / kindness99(개인)<br>
+
+                            <div class="contact-icons">
+                                <!-- 인스타그램 DM -->
+                                <a href="https://instagram.com/picoinbohol" target="_blank">
+                                    <img src="logo/Instagram_icon.png" alt="Instagram DM">
+                                </a>
+
+                                <!-- 페이스북 메신저 -->
+                                <a href="https://m.me/picoinbohol" target="_blank">
+                                    <img src="logo/Facebook_Messenger_logo_2020.svg"
+                                        alt="Messenger">
+                                </a>
+                                <!-- 왓츠앱 -->
+                                <a href="https://wa.me/639625402625" target="_blank">
+                                    <img src="logo/WhatsApp.svg" alt="WhatsApp">
+                                </a>
+                              
+                            </div>
+
+                        </p>
+            </p>
+            <BR><BR>
+            <p>
+                [이런 사람 입니다.]<br>
+
+                현재 보홀에 있는 PICO HOUSE 운영중, 스쿠버 다이빙 강사(IDEA).<BR><BR>
+
+                과거는?<BR>
+                대형로펌에서 10년간 엑셀 오지게 하다 세계일주 하려고 퇴사<BR>
+                2년간 여행을 했으나, 돈 떨어져서 아메리카 대륙과 호주는 못감<BR>
+                여행 후 협회, 중소기업등에서 경영본부장,실장등으로 경영 전반을 책임짐<BR>
+                과분한 처우를 받았으나, <BR>
+                술먹고 지랄하는 놈, 불법을 일삼는 대표 때문에 짜증나서 다 관둠<BR>
+                와인바도 오픈해 봄. 와인만 오지게 먹음<BR>
+                보홀에 오기전 요트타고 한국에서 일본,홍콩을 거쳐 필리핀 수빅까지 옴<BR><BR>
+
+                술 좋아함, 주종 가리지 않고 먹음<BR>
+                책 읽는거 좋아함<BR>
+                쓸데 없이 많이 배웠음<BR>
+                법, 회계, 세무, 핀테크 지식 조금씩 있음<BR>
+                직장내 괴롭힘 신고 해봄. 상담 가능<BR>
+
+            </p>
+
+            <div class="signature">
+                Pico House
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
