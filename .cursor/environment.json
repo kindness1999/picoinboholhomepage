@@ -1,0 +1,14 @@
+{
+  "name": "picoinbohol.com static site",
+  "install": "test -f index.html && test -f CNAME",
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 8000 --bind 0.0.0.0",
+      "description": "Serves the static site from the repository root at http://localhost:8000. Assets use absolute paths (e.g. /css/index.css), so they resolve when served from the repo root."
+    }
+  ],
+  "ports": [
+    { "name": "static site", "port": 8000 }
+  ]
+}
